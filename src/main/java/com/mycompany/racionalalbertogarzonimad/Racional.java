@@ -28,6 +28,11 @@ public class Racional {
         this.denominador = denominador;
 
     }
+    
+    public void imprimirConsola(){
+        
+        System.out.println("El numero racional es: " +numerador + "/" +denominador);
+    }
 
     public int getNumerador() {
         return numerador;
