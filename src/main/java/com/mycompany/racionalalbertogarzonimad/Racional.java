@@ -49,6 +49,21 @@ public class Racional {
 
     }
 
+    public void producto(Racional x) {
+        this.numerador = this.numerador * x.numerador;
+        this.denominador = this.denominador * x.denominador;
+    }
+    //Método de clase igualdad(Racional x, Racional y) 
+    //que devolverá si el Racional x es igual al Racional y
+
+   public static boolean igualdad(Racional x, Racional y) {
+        if (x.getNumerador() == y.getNumerador()&& x.getDenominador() == y.getDenominador()) {
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
     public int getNumerador() {
         return numerador;
     }
