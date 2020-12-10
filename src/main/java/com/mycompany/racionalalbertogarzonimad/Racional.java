@@ -21,7 +21,7 @@ public class Racional {
 
     public Racional(int numerador, int denominador) {
         this.numerador = numerador;
-        
+
         if (denominador == 0) {
             denominador = 1;
         }
@@ -35,6 +35,17 @@ public class Racional {
 
     public int getDenominador() {
         return denominador;
+    }
+
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    public void setDenominador(int denominador) {
+        if (denominador == 0) {
+            denominador = 1;
+        }
+        this.denominador = denominador;
     }
 
 }
