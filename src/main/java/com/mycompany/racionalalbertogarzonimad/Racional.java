@@ -53,4 +53,9 @@ public class Racional {
         this.denominador = denominador;
     }
 
+    @Override
+    public String toString() {
+        return "Racional{"+ numerador/denominador + '}';
+    }
+    
 }
