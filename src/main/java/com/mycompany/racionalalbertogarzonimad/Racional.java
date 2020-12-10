@@ -28,10 +28,25 @@ public class Racional {
         this.denominador = denominador;
 
     }
-    
-    public void imprimirConsola(){
-        
-        System.out.println("El numero racional es: " +numerador + "/" +denominador);
+
+    public void imprimirConsola() {
+
+        System.out.println("El numero racional es: " + numerador + "/" + denominador);
+    }
+
+    public void suma(Racional x) {
+        if (this.denominador == x.denominador) {
+
+            this.numerador += x.numerador;
+
+        } else {
+
+            this.numerador = (this.numerador * x.denominador)
+                    + (this.denominador * x.numerador);
+
+            this.denominador *= x.denominador;
+        }
+
     }
 
     public int getNumerador() {
@@ -55,7 +70,7 @@ public class Racional {
 
     @Override
     public String toString() {
-        return "Racional{"+ numerador/denominador + '}';
+        return "Racional{" + numerador / denominador + '}';
     }
-    
+
 }
