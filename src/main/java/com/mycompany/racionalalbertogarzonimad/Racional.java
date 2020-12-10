@@ -11,7 +11,12 @@ package com.mycompany.racionalalbertogarzonimad;
  */
 public class Racional {
 
-    private int enteroA;
-    private int enteroB;
+    private int numerador;
+    private int denominador;
+
+    public Racional() {
+        this.numerador = 1;
+        this.denominador = 1;
+    }
 
 }
