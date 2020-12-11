@@ -33,6 +33,9 @@ public class AppRacional {
         //Realizo la suma
           racionalZ.suma(racionalK);
           (racionalZ.suma(racionalK)).imprimirConsola();
+          
+          //Comparamos los dos racionales, comprobando su igualdad
+        System.out.println(Racional.igualdad(racionalZ, racionalK));
         
     }
 
