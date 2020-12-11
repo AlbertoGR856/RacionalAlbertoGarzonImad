@@ -72,6 +72,12 @@ public class Racional {
         this.numerador = this.numerador * x.numerador;
         this.denominador = this.denominador * x.denominador;
     }
+    
+     //Método estático que divide dos números racionales
+    public static Racional division(Racional racional1, Racional racional2) {
+
+        return new Racional(racional1.numerador *= racional2.denominador, racional1.denominador *= racional2.numerador);
+    }
     //Método de clase igualdad(Racional x, Racional y) 
     //que devolverá si el Racional x es igual al Racional y
 
