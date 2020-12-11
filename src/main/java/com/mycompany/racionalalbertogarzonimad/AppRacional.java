@@ -10,9 +10,13 @@ package com.mycompany.racionalalbertogarzonimad;
  * @author GR6
  */
 public class AppRacional {
-    
+
     public static void main(String[] args) {
-        
+
+        //Creamos dos numeros racionales con los siguientes valores
+        Racional racionalZ = new Racional(4, 5);
+
+        Racional racionalK = new Racional(3, 4);
     }
-    
+
 }
