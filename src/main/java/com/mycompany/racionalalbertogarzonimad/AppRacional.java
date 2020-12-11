@@ -32,7 +32,7 @@ public class AppRacional {
         
         //Realizo la suma
           racionalZ.suma(racionalK);
-          (racionalZ.suma(racionalK)).imprimirConsola();
+        System.out.println("El resultado de la suma es: "+racionalZ.toString());
           
           //Comparamos los dos racionales, comprobando su igualdad
         System.out.println(Racional.igualdad(racionalZ, racionalK));
