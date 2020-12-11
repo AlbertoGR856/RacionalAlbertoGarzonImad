@@ -17,6 +17,11 @@ public class AppRacional {
         Racional racionalZ = new Racional(4, 5);
 
         Racional racionalK = new Racional(3, 4);
+        
+        //Creamos un racional aleatorio.
+       Racional prueba1 = new Racional();
+
+        prueba1 = prueba1.aleatorio();
     }
 
 }
