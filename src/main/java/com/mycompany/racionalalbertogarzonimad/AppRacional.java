@@ -22,6 +22,18 @@ public class AppRacional {
         Racional prueba1 = new Racional();
 
         prueba1 = Racional.aleatorio();
+        
+            //Imprimo los tres racionales y limitamos la salida a dos decimales.
+       System.out.printf("Racionalz: %.2f \n", (float)racionalZ.getNumerador() / racionalZ.getDenominador());
+       System.out.printf("Racionalk: %.2f \n", (float)racionalK.getNumerador() / racionalK.getDenominador());
+        System.out.printf("Aleatorio prueba1: %.2f \n", (float)prueba1.getNumerador() / prueba1.getDenominador());
+        
+        
+        
+        //Realizo la suma
+          racionalZ.suma(racionalK);
+          (racionalZ.suma(racionalK)).imprimirConsola();
+        
     }
 
 }
