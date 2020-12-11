@@ -5,14 +5,18 @@
  */
 package com.mycompany.racionalalbertogarzonimad;
 
+import java.util.Random;
+
 /**
  *
  * @author alberto
  */
 public class Racional {
+
     //Atributos privados numerador y denomirador
     private int numerador;
     private int denominador;
+
     //Constructor por defecto, indicando como numerador y denominador el valor 1.
     public Racional() {
         this.numerador = 1;
@@ -36,6 +40,7 @@ public class Racional {
         System.out.println("El numero racional es: " + numerador + "/" + denominador);
     }
 //Método suma(Racional x),  sumará al racional que llama al método el valor del número racional que recibe como argumento. 
+
     public void suma(Racional x) {
         if (this.denominador == x.denominador) {
 
@@ -50,8 +55,7 @@ public class Racional {
         }
 
     }
-    
-    
+
     //Método resta(Racional x), realizara la resta al racional llamanado al metodo cuyo valor (numero racional) es recibido como argumento. 
     public void resta(Racional x) {
         if (this.denominador == x.denominador) {
@@ -68,28 +72,40 @@ public class Racional {
 
     }
 //Método producto(Racional x), que guardará en los atributos del objeto que hace la llamada la siguiente información:
+
     public void producto(Racional x) {
         this.numerador = this.numerador * x.numerador;
         this.denominador = this.denominador * x.denominador;
     }
-    
-     //Método estático que divide dos números racionales
+
+    //Método estático que divide dos números racionales
     public static Racional division(Racional racional1, Racional racional2) {
 
         return new Racional(racional1.numerador *= racional2.denominador, racional1.denominador *= racional2.numerador);
     }
+
+    //Método que crea un Racional con valores aleatorios (numerador y denominador)
+    public static Racional aleatorio() {
+        Random randomAleatorio = new Random();
+
+        int numerador = randomAleatorio.nextInt();
+        int denominador = randomAleatorio.nextInt();
+
+        return new Racional();
+    }
+
     //Método de clase igualdad(Racional x, Racional y) 
     //que devolverá si el Racional x es igual al Racional y
-
-   public static boolean igualdad(Racional x, Racional y) {
-        if (x.getNumerador() == y.getNumerador()&& x.getDenominador() == y.getDenominador()) {
+    public static boolean igualdad(Racional x, Racional y) {
+        if (x.getNumerador() == y.getNumerador() && x.getDenominador() == y.getDenominador()) {
             return true;
-        }else{
+        } else {
             return false;
         }
-        
+
     }
-   //metodos Get
+    //metodos Get
+
     public int getNumerador() {
         return numerador;
     }
@@ -97,6 +113,7 @@ public class Racional {
     public int getDenominador() {
         return denominador;
     }
+
     //metodos Set
     public void setNumerador(int numerador) {
         this.numerador = numerador;
@@ -109,6 +126,7 @@ public class Racional {
         this.denominador = denominador;
     }
 //Método toString(), que devolverá una cadena de texto con el siguiente formato "a/b".
+
     @Override
     public String toString() {
         return "Racional{" + numerador / denominador + '}';
