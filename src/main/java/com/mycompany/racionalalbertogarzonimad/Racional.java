@@ -37,7 +37,7 @@ public class Racional {
 
     public void imprimirConsola() {
 
-        System.out.println("El numero racional es: " + numerador + "/" + denominador);
+        System.out.println(toString());
     }
 //Método suma(Racional x),  sumará al racional que llama al método el valor del número racional que recibe como argumento. 
 
@@ -88,10 +88,10 @@ public class Racional {
     public static Racional aleatorio() {
         Random randomAleatorio = new Random();
 
-        int numerador = randomAleatorio.nextInt();
-        int denominador = randomAleatorio.nextInt();
-
-        return new Racional();
+        int numerador1 = randomAleatorio.nextInt();
+        int denominador1 = randomAleatorio.nextInt();
+        Racional aleatorioNuevo = new Racional(numerador1, denominador1);
+        return aleatorioNuevo;
     }
 
     //Método de clase igualdad(Racional x, Racional y) 
@@ -129,7 +129,7 @@ public class Racional {
 
     @Override
     public String toString() {
-        return "Racional{" + numerador / denominador + '}';
+        return numerador + "/" + denominador;
     }
 
 }
