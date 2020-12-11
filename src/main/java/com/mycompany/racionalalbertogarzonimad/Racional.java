@@ -50,6 +50,23 @@ public class Racional {
         }
 
     }
+    
+    
+    //Método resta(Racional x), realizara la resta al racional llamanado al metodo cuyo valor (numero racional) es recibido como argumento. 
+    public void resta(Racional x) {
+        if (this.denominador == x.denominador) {
+
+            this.numerador -= x.numerador;
+
+        } else {
+
+            this.numerador = (this.numerador * x.denominador)
+                    - (this.denominador * x.numerador);
+
+            this.denominador *= x.denominador;
+        }
+
+    }
 //Método producto(Racional x), que guardará en los atributos del objeto que hace la llamada la siguiente información:
     public void producto(Racional x) {
         this.numerador = this.numerador * x.numerador;
