@@ -37,7 +37,7 @@ public class AppRacional {
 
         //Se muestra la division de los dos racionales, guardando el resultado de la división en un nuevo objeto de tipo Racional
         Racional resultadoDivision = Racional.division(racionalZ, racionalK);
-        System.out.println("El resultado de dividir Z y K es" + resultadoDivision);
+        System.out.println("El resultado de dividir Z y K es: " + resultadoDivision);
 
     }
 

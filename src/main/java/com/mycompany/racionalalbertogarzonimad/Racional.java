@@ -104,7 +104,7 @@ public class Racional {
         }
 
     }
-    //metodos Get
+    //Métodos Get
 
     public int getNumerador() {
         return numerador;
@@ -114,7 +114,7 @@ public class Racional {
         return denominador;
     }
 
-    //metodos Set
+    //Métodos Set
     public void setNumerador(int numerador) {
         this.numerador = numerador;
     }
